@@ -430,4 +430,67 @@ ul {
 }
 ```
 
+### Section Title with Underline
+
+- add following div
+
+```css
+    <div class="title">
+      <h2>section title</h2>
+      <div class="title-underline"></div>
+    </div>
+```
+
+- follow up with theses classes
+
+```css
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  margin-bottom: 0.25rem;
+}
+
+.title-underline {
+  background-color: var(--primary-500);
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+}
+```
+
+### Underlined titles - alternative
+
+- another way is by using pseudo styles
+
+```css
+    <div class="title">
+      <h2 class="underlined">Another Section</h2>
+    </div>
+```
+
+```css
+.underlined:after {
+  background-color: var(--primary-500);
+  content: ' ';
+  display: block;
+  height: 0.25rem;
+  width: 7rem;
+  margin: 0 auto;
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.underlined:hover:after {
+  background: var(--primary-200);
+  width: 12rem;
+}
+```
+
 This concludes our default css setup for projects.
