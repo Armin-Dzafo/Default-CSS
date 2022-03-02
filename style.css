@@ -272,15 +272,12 @@ ul {
   text-align: center;
 }
 
-.title h2 {
-  margin-bottom: 0.25rem;
-}
-
 .title-underline {
   background-color: var(--primary-500);
   width: 7rem;
   height: 0.25rem;
   margin: 0 auto;
+  margin-top: -1rem;
 }
 
 .underlined:after {
